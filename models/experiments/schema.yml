@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: products_destination
+    description: "srcproducts table transformed"
+    columns:
+      - name: productId
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: product_cost
+      - name: product_name
+      - name: product_price
+      - name: product_category
+      
+      
+
+  
