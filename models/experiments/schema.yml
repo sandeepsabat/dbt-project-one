@@ -14,7 +14,23 @@ models:
       - name: product_name
       - name: product_price
       - name: product_category
-      
-      
+
+sources:
+  - name: file_source_schema
+    database: testdb
+    schema: file_source_schema
+    tables:
+      - name: srcinventory
+      - name: srcproducts
+      - name: srcsales
+      - name: srcstores
+  - name: dbt_local
+    database: testdb
+    schema: dbt_local
+    tables:
+      - name: inventory_destination
+      - name: sales_destination
+      - name: products_detsination
+       
 
   

@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "43.205.136.128",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "postgrestestdb",
+            "database": "testdb",
+            "username": "ioo"
+        }
+    ]
+}
