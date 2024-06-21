@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: file_source_schema
-    database: testdb
+    database: ioo
     schema: file_source_schema
     tables:
       - name: srcinventory
@@ -10,7 +10,7 @@ sources:
       - name: srcsales
       - name: srcstores
   - name: dbt_local
-    database: testdb
+    database: ioo
     schema: dbt_local
     tables:
       - name: inventory_destination

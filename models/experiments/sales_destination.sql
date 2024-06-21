@@ -1,6 +1,6 @@
 {{config(materialized='table')}}
  with sales_destination as (
-    select CAST(sales.date as DATE), sales.units, CAST(sales.sale_id as INTEGER), CAST(sales.store_id as INTEGER), CAST(sales.product_id as INTEGER)
+    select CAST("Date" as DATE) as date, CAST("Units" as INTEGER) as units, CAST("Sale_ID" as INTEGER) as sale_id, CAST("Store_ID" as INTEGER) as store_id, CAST("Product_ID" as INTEGER) as product_id
     from file_source_schema.srcsales as sales
  )
 
